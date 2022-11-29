@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;300&display=swap');
+*{
+  font-family: 'Noto Sans Thai', sans-serif;
+}
 :root
 {
   --yellow: #F5C32C;
@@ -25,6 +29,7 @@
     color: white;
     font-size: 14px;
     padding: 11px 26px 11px 26px;
+    align-items: center;
   }
   
   .button:hover {
@@ -33,18 +38,39 @@
     border: 1px solid var(--orange);
     color: var(--orange);
   }
+  .button2 {
+    background: linear-gradient(180deg, #0400fc 26.71%, #4f46fd 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 11px 26px 11px 26px;
+    align-items: center;
+  }
+  
+  .button2:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--purple);
+    color: var(--purple);
+  }
   @media screen and (max-width: 960px) {
-    .App {
-      padding: 0.5rem 1rem;
-    }
+
     .button {
       background: linear-gradient(180deg, #facb30 26.71%, #fb982f 99.36%);
       box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
       border-radius: 30px;
-      border: none;
       color: white;
       font-size: 10px;
-      padding: 11px 26px 11px 26px;
+    }
+    .button2 {
+      background: linear-gradient(180deg, #0400fc 26.71%, #4f46fd 99.36%);
+      box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+      border-radius: 30px;
+      color: white;
+      font-size: 10px;
+      align-items: center;
     }
     
   }
