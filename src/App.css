@@ -13,40 +13,33 @@
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
     --orangeCard: rgba(252, 166, 31, 0.45);
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    background-color: rgb(250, 230, 230);
 }
 
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
+    color: var(--black);  
 }
 
 .button {
-    background: linear-gradient(180deg, #facb30 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    background: linear-gradient(180deg, #ffffff 26.71%, #f7ede3 99.36%);
+    border: 2px solid var(--orange);
     border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 14px;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
     padding: 11px 26px 11px 26px;
     align-items: center;
+    width: 100%;
+    margin-top: -0.7rem;
+
   }
   
   .button:hover {
-    background: white;
+    background: linear-gradient(180deg,#f7ede3 26.71%, #ffffff 99.36%);
     cursor: pointer;
-    border: 1px solid var(--orange);
+    border: 2px solid var(--black);
     color: var(--orange);
-  }
-  .button2 {
-    background: linear-gradient(180deg, #0400fc 26.71%, #4f46fd 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 14px;
-    padding: 11px 26px 11px 26px;
-    align-items: center;
   }
   
   .button2:hover {
@@ -55,22 +48,24 @@
     border: 1px solid var(--purple);
     color: var(--purple);
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 480px) {
 
     .button {
-      background: linear-gradient(180deg, #facb30 26.71%, #fb982f 99.36%);
-      box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-      border-radius: 30px;
-      color: white;
-      font-size: 10px;
+      font-size: 13px;
+      margin-top: -0.9rem;
+
     }
-    .button2 {
-      background: linear-gradient(180deg, #0400fc 26.71%, #4f46fd 99.36%);
-      box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  }
+  @media screen and (max-width: 960px)and (min-width: 480px) {
+
+    .button {
+      background: linear-gradient(180deg, #ffffff 26.71%, #f7ede3 99.36%);
+      border: 2px solid var(--orange);
       border-radius: 30px;
-      color: white;
-      font-size: 10px;
-      align-items: center;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+      margin-top: -0.5rem;
+  
     }
     
   }
